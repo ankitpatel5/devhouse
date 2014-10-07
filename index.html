@@ -11,34 +11,86 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="assets/css/fontello.css" type="text/css">
-    <!--<link rel="stylesheet" href="assets/css/flexslider.css" type="text/css">-->
-
+    <link rel="stylesheet" href="assets/css/flexslider.css" type="text/css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
     <title>DevHouse</title>
 
     <style>
-        .overlay {
-               background:transparent; 
-               position:relative; 
-               width:100%;
-               height:500px; /* your iframe height */
-               top:500px;  /* your iframe height */
-               margin-top:-500px;  /* your iframe height */
-            }
-            #devMap {
-                height: 497px; /* height of the iframe minus the 3 f***king pixels */
-                width: 100%;
-                overflow: hidden;
-            }
-            #devMap iframe {
-                margin-top: -3px;
-            }
-            a.btn#applyButton {
-                margin-top: -25em;
-                z-index: 100;
-                position: relative;
-            }
+
+        @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+
+        .devMapOverlay {
+           background:transparent; 
+           position:relative; 
+           width:100%;
+           height:500px; /* your iframe height */
+           top:500px;  /* your iframe height */
+           margin-top:-500px;  /* your iframe height */
+        }
+        #devMap {
+            height: 497px; /* height of the iframe minus the 3 f***king pixels */
+            width: 100%;
+            overflow: hidden;
+        }
+        #devMap iframe {
+            margin-top: -3px;
+        }
+
+        #devTour {
+            height: 572px; /* height of the iframe minus the 3 f***king pixels */
+            width: 100%;
+            overflow: hidden;
+        }
+        #devTour iframe {
+            margin-top: -3px;
+        }
+        .devTourOverlay {
+           background:transparent; 
+           position:relative; 
+           width:100%;
+           height:575px; /* your iframe height */
+           top:575px;  /* your iframe height */
+           margin-top:-575px;  /* your iframe height */
+        }
+        a.btn#applyButton {
+            margin-top: 10em;
+            z-index: 100;
+            position: relative;
+            font-size: 2.25em;
+        }
+        div.title-image {
+            background: url("assets/mineimages/title-image.jpg");
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            height: 100%;
+            -webkit-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+            filter: grayscale(0%);  
+        }
+        div.title-phrase.introduction {
+            -webkit-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+            filter: grayscale(0%);  
+        }
+        div.title-image-container{
+            height: 625px;
+        }
+        .title-header {
+            color: white;
+            font-family: "Roboto Condensed";
+            margin-top: 1.5em;
+        }
+        .title-phrase {
+            margin-top: 8em;
+            color: white;
+            background: #fc6f22;
+            opacity: 0.9;
+            font-family: "Roboto Condensed";
+        }
+        section#slider.block {
+            padding: 0px;
+        }
     </style>
 
 </head>
@@ -64,28 +116,84 @@
                 <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#home">Home</a></li>
-                        <li><a href="#features">Why Condio</a></li>
+                        <li><a href="#features">Why DevHouse?</a></li>
                         <li><a href="#features-boxes">Features</a></li>
                         <li><a href="#footer">Contact</a></li>
                     </ul>
-                </nav><!-- /.navbar collapse-->
-            </header><!-- /.navbar -->
-        </div><!-- /.container -->
-    </div><!-- /.navigation -->
+                </nav>
+            </header>
+        </div>
+    </div>
 
-    <section id="slider">
-        <div class="flexslider loading">
-            <div id="loading-icon"><i class="fa fa-cog fa-spin"></i></div>
-            <ul class="slides">
-                <li class="slide"><img src="assets/img/slide-01.jpg" alt="" style="height:100%"></li>
-                <li class="slide"><img src="assets/img/slide-02.jpg" alt="" style="height:100%"></li>
-                <li class="slide"><img src="assets/img/slide-03.jpg" alt="" style="height:100%"></li>
-            </ul><!-- /.slides -->
-        </div><!-- /.flexslider -->
-    <center><a href="https://raviparikh.typeform.com/to/rAlRDP" class="btn btn-primary btn-lg" id="applyButton" role="button" target="_blank">Apply Now</a></center>
-    </section><!-- /#slider -->
+    <section id="slider" class="block">
+        <br><br>
+        <div class="container-fluid title-image-container">
 
-    <section id="features" class="block">
+            <div class="row title-image">
+                <div class="col-md-12 col-sm-12 title-header">
+                    <div class="row title-header text-center">
+                        <div class="col-md-6 col-sm-6 title-header pull-right">
+                            <h1> Live Together Under One Roof</h1>
+                            <h4>Launch Ideas | Develop Software | Meet the Community</h4>
+                            <center><a href="https://raviparikh.typeform.com/to/rAlRDP" class="btn btn-primary btn-lg" id="applyButton" role="button" target="_blank">Move In Today</a></center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features-boxes" class="block ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3">
+                    <div class="feature-box">
+                        <center><i class="icon-target" style="font-size:5em"></i></center>
+                        <header>
+                            <h4 style="text-align:center">Location, Location, Location!</h4>
+                        </header>
+                        <p>We are located in east Austin, 5 minutes away from the University of Texas, MakerSquare, Capitol Factory, and nightlife on 6th.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <div class="feature-box">
+                        <center><i class="icon-users" style="font-size:5em"></i></center>
+                        <header>
+                            <h4 style="text-align:center">Good People</h4>
+                        </header>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus,
+                            risus sit amet auctor sodales, justo erat tempor eros, non
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <div class="feature-box">
+                        <center><i class="icon-money" style="font-size:5em"></i></center>
+                        <header>
+                            <h4 style="text-align:center">No Worries</h4>
+                        </header>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus,
+                            risus sit amet auctor sodales, justo erat tempor eros, non
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <div class="feature-box">
+                        <center><i class="icon-calendar" style="font-size:5em"></i></center>
+                        <header>
+                            <h4 style="text-align:center">Short Term</h4>
+                        </header>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus,
+                            risus sit amet auctor sodales, justo erat tempor eros, non
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="block background-color-grey-light">
         <div class="container">
             <header><h3>Why live at thedev.house?</h3></header>
             <div class="row">
@@ -142,48 +250,12 @@
         </div><!-- /.container -->
     </section><!-- /#features .block -->
 
-    <section id="features-boxes" class="block background-color-grey-light">
-        <div class="container">
-            <header><h3>About the house</h3></header>
-            <div class="row">
-                <div class="col-md-4 col-sm-4">
-                    <div class="feature-box">
-                        <center><i class="icon-target" style="font-size:5em"></i></center>
-                        <header>
-                            <!-- <img src="assets/img/icon-01.png" alt=""> -->
-                            <h4 style="text-align:center">Location, Location, Location!</h4>
-                        </header>
-                        <p>We are located in east Austin, 5 minutes away from the University of Texas, MakerSquare, Capitol Factory, and nightlife on 6th.
-                        </p>
-                    </div><!-- /.feature-box -->
-                </div><!-- /.col-md-4 -->
-                <div class="col-md-4 col-sm-4">
-                    <div class="feature-box">
-                        <center><i class="icon-users" style="font-size:5em"></i></center>
-                        <header>
-                            <!-- <img src="assets/img/icon-02.png" alt=""> -->
-                            <h4 style="text-align:center">Good People</h4>
-                        </header>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus,
-                            risus sit amet auctor sodales, justo erat tempor eros, non
-                        </p>
-                    </div><!-- /.feature-box -->
-                </div><!-- /.col-md-4 -->
-                <div class="col-md-4 col-sm-4">
-                    <div class="feature-box">
-                        <center><i class="icon-users" style="font-size:5em"></i></center>
-                        <header>
-                            <!-- <img src="assets/img/icon-03.png" alt=""> -->
-                            <h4 style="text-align:center">No Worries</h4>
-                        </header>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus,
-                            risus sit amet auctor sodales, justo erat tempor eros, non
-                        </p>
-                    </div><!-- /.feature-box -->
-                </div><!-- /.col-md-4 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section><!-- /#features-boxes .block -->
+    <section id="logos" class="block" style="padding-top:0px;padding-bottom:0px;">
+        <div class="devTourOverlay" onClick="style.pointerEvents='none'"></div>
+        <center id="devTour">
+            <iframe width="100%" height="575" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=MakerSquare+DevHouse&amp;layer=c&amp;sll=30.278424,-97.721524&amp;cid=16617492529913770518&amp;panoid=mecElrJYtvMAAAAGOzWhcg&amp;cbp=13,158.08,,0,0&amp;hl=en&amp;gl=US&amp;ie=UTF8&amp;hq=MakerSquare+DevHouse&amp;hnear=&amp;ll=30.278424,-97.721524&amp;spn=0.006295,0.006295&amp;t=m&amp;cbll=30.278353,-97.721524&amp;source=embed&amp;output=svembed"></iframe>
+        </center>
+    </section>
 
     <section id="properties" class="block">
         <div class="container">
@@ -209,10 +281,10 @@
                                     <dt>Price:</dt>
                                     <dd><strong>$89,900</strong></dd>
                                 </dl>
-                            </div><!-- /.description -->
-                        </div><!-- /.property -->
-                    </div><!-- /.property-wrapper -->
-                </div><!-- /.col-md-3 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-md-3 col-sm-3">
                     <div class="property-wrapper">
                         <div class="property">
@@ -233,10 +305,10 @@
                                     <dt>Price:</dt>
                                     <dd><strong>$186,300</strong></dd>
                                 </dl>
-                            </div><!-- /.description -->
-                        </div><!-- /.property -->
-                    </div><!-- /.property-wrapper -->
-                </div><!-- /.col-md-3 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-md-3 col-sm-3">
                     <div class="property-wrapper">
                         <div class="property">
@@ -257,10 +329,10 @@
                                     <dt>Price:</dt>
                                     <dd><strong>$200,000</strong></dd>
                                 </dl>
-                            </div><!-- /.description -->
-                        </div><!-- /.property -->
-                    </div><!-- /.property-wrapper -->
-                </div><!-- /.col-md-3 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-md-3 col-sm-3">
                     <div class="property-wrapper">
                         <div class="property">
@@ -281,58 +353,37 @@
                                     <dt>Price:</dt>
                                     <dd><strong>$69,000</strong></dd>
                                 </dl>
-                            </div><!-- /.description -->
-                        </div><!-- /.property -->
-                    </div><!-- /.property-wrapper -->
-                </div><!-- /.col-md-3 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section><!-- /#properties -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="testimonials" class="block background-color-grey-light">
         <div class="container">
-            <!-- <header class="section-title"><h3>Testimonials</h3></header> -->
             <div class="owl-carousel testimonials-carousel">
-            <!-- <div class="testimonials-carousel"> -->
-                <!-- <blockquote class="testimonial">
-                    <figure>
-                        <div class="image">
-                            <img alt="" src="assets/mineimages/client-01.jpg">
-                        </div>
-                    </figure>
-                    <aside class="cite">
-                        <p>The bi-weekly maid service is wonderful.</p>
-                        <footer>Joanne</footer>
-                    </aside>
-                </blockquote> -->
                 <blockquote class="testimonial">
-                    <!-- <figure> -->
-                        <!-- <div class="image"> -->
-                            <img alt="" src="assets/mineimages/tina.png" style="width:6em">
-                        <!-- </div> -->
-                    <!-- </figure> -->
+                        <img alt="" src="assets/mineimages/tina.png" style="width:6em">
                     <aside class="cite">
                         <p>DevHouse hack nights brought us closer together as well as our three DevHouse parties/mixers.</p>
                         <footer>Tina</footer>
                     </aside>
                 </blockquote>
                 <blockquote class="testimonial">
-                    <!-- <figure> -->
-                        <!-- <div class="image"> -->
-                            <img alt="" src="assets/mineimages/taylor.png" style="width:6em">
-                        <!-- </div> -->
-                    <!-- </figure> -->
+                        <img alt="" src="assets/mineimages/taylor.png" style="width:6em">
                     <aside class="cite">
                         <p>Having three other roommates was definitely a huge resource when it came to bouncing ideas off of one another and figuring how to get unstuck..</p>
                         <footer>Taylor</footer>
                     </aside>
                 </blockquote>
-            </div><!-- /.testimonials-carousel -->
-        </div><!-- /.container -->
-    </section><!-- /#testimonials -->
+            </div>
+        </div>
+    </section>
     
     <section id="logos" class="block" style="padding-top:0px;padding-bottom:0px;">
-        <div class="overlay" onClick="style.pointerEvents='none'"></div>
+        <div class="devMapOverlay" onClick="style.pointerEvents='none'"></div>
         <center id="devMap">
             <iframe 
               width="100%"
@@ -371,28 +422,28 @@
                                 <div class="form-group">
                                     <label for="contact-form-name">Your Name<em>*</em></label>
                                     <input type="text" class="form-control" id="contact-form-name" name="contact-form-name" required>
-                                </div><!-- /.form-group -->
-                            </div><!-- /.col-md-6 -->
+                                </div>
+                            </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="contact-form-email">Your Email<em>*</em></label>
                                     <input type="email" class="form-control" id="contact-form-email" name="contact-form-email" required>
-                                </div><!-- /.form-group -->
-                            </div><!-- /.col-md-6 -->
-                        </div><!-- /.row -->
+                                </div>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label for="contact-form-message">Your Message<em>*</em></label>
                                     <textarea class="form-control" id="contact-form-message" rows="6" name="contact-form-message" required></textarea>
-                                </div><!-- /.form-group -->
-                            </div><!-- /.col-md-12 -->
-                        </div><!-- /.row -->
+                                </div>
+                            </div>
+                        </div>
                         <div class="form-group">
                             <button type="submit" class="btn pull-right btn-large" id="form-contact-submit">Send a Message</button>
-                        </div><!-- /.form-group -->
+                        </div>
                         <div id="form-status"></div>
-                    </form><!-- /#form-contact -->
+                    </form>
                 </div>
             </div>
         </div>
