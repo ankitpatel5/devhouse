@@ -66,7 +66,11 @@ h4#core-value {
   text-align: center;
 }
 /* Why live at the devhouse */
-/* available apartments */
+/* available rooms */
+#floorplan {
+  height: 500px;
+  width: auto;
+}
 
 
 
@@ -83,6 +87,7 @@ section#tour.block, #tour .container-fluid {
    position:relative; 
    top:575px;  /* your iframe height */
    width:100%;
+   z-index: 1;
 }
 #dev-tour iframe {
     margin-top: -3px;
@@ -119,6 +124,7 @@ section#location.block, #location .container-fluid {
    position:relative; 
    top:500px;  /* your iframe height */
    width:100%;
+   z-index: 1;
 }
 #dev-map iframe {
     margin-top: -3px;
@@ -128,6 +134,10 @@ section#location.block, #location .container-fluid {
     overflow: hidden;
     width: 100%;
 }
+
+/*javascript map*/
+html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+
 
 
 
