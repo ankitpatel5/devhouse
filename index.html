@@ -6,143 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="DevHouse">
 
-    <link href="assets/fonts/font-awesome-4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/fontello.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/flexslider.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-
     <title>DevHouse</title>
 
-    <style>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
 
-        @font-face {
-          font-family: 'Pluto Sans Regular';
-          src: url('assets/fonts/pluto_sans/pluto-sans-condensed-regular.eot') format('embedded-opentype'),
-               url('assets/fonts/pluto_sans/pluto-sans-condensed-regular.woff') format('woff'),
-               url('assets/fonts/pluto_sans/pluto-sans-condensed-regular.ttf') format('truetype'),
-               url('assets/fonts/pluto_sans/pluto-sans-condensed-regular.svg') format('svg');
-          font-weight: normal;
-          font-style: normal;
-        }
-        @font-face {
-          font-family: 'Pluto Sans ExLight';
-          src: url('assets/fonts/pluto_sans/pluto-sans-condensed-exlight.eot') format('embedded-opentype'),
-               url('assets/fonts/pluto_sans/pluto-sans-condensed-exlight.woff') format('woff'),
-               url('assets/fonts/pluto_sans/pluto-sans-condensed-exlight.ttf') format('truetype'),
-               url('assets/fonts/pluto_sans/pluto-sans-condensed-exlight.svg') format('svg');
-          font-weight: normal;
-          font-style: normal;
-        }
-        /*@font-face {
-          font-family: 'Pluto Sans';
-          src: url('assets/fonts/pluto_sans/pluto-sans-condensed-light.eot') format('embedded-opentype'),
-               url('assets/fonts/pluto_sans/pluto-sans-condensed-light.woff') format('woff'),
-               url('assets/fonts/pluto_sans/pluto-sans-condensed-light.ttf') format('truetype'),
-               url('assets/fonts/pluto_sans/pluto-sans-condensed-light.svg') format('svg');
-          font-weight: normal;
-          font-style: normal;
-        }
-        @font-face {
-          font-family: 'Pluto Sans';
-          src: url('assets/fonts/pluto_sans/pluto-sans-condensed-medium.eot') format('embedded-opentype'),
-               url('assets/fonts/pluto_sans/pluto-sans-condensed-medium.woff') format('woff'),
-               url('assets/fonts/pluto_sans/pluto-sans-condensed-medium.ttf') format('truetype'),
-               url('assets/fonts/pluto_sans/pluto-sans-condensed-medium.svg') format('svg');
-          font-weight: normal;
-          font-style: normal;
-        }
-        @font-face {
-          font-family: 'Pluto Sans';
-          src: url('assets/fonts/pluto_sans/pluto-sans-condensed-regular.eot') format('embedded-opentype'),
-               url('assets/fonts/pluto_sans/pluto-sans-condensed-regular.woff') format('woff'),
-               url('assets/fonts/pluto_sans/pluto-sans-condensed-regular.ttf') format('truetype'),
-               url('assets/fonts/pluto_sans/pluto-sans-condensed-regular.svg') format('svg');
-          font-weight: normal;
-          font-style: normal;
-        }
-        @font-face {
-          font-family: 'Pluto Sans';
-          src: url('assets/fonts/pluto_sans/pluto-sans-condensed-thin.eot') format('embedded-opentype'),
-               url('assets/fonts/pluto_sans/pluto-sans-condensed-thin.woff') format('woff'),
-               url('assets/fonts/pluto_sans/pluto-sans-condensed-thin.ttf') format('truetype'),
-               url('assets/fonts/pluto_sans/pluto-sans-condensed-thin.svg') format('svg');
-          font-weight: thin;
-          font-style: normal;
-        }*/
+    <!-- fonts -->
+    <link rel="stylesheet" href="assets/css/fontello.css" type="text/css">
+    <link href="assets/fonts/font-awesome-4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-        .devMapOverlay {
-           background:transparent; 
-           position:relative; 
-           width:100%;
-           height:500px; /* your iframe height */
-           top:500px;  /* your iframe height */
-           margin-top:-500px;  /* your iframe height */
-        }
-        #devMap {
-            height: 497px; /* height of the iframe minus the 3 f***king pixels */
-            width: 100%;
-            overflow: hidden;
-        }
-        #devMap iframe {
-            margin-top: -3px;
-        }
+    <!-- add ons -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css">
 
-        #devTour {
-            height: 572px; /* height of the iframe minus the 3 f***king pixels */
-            width: 100%;
-            overflow: hidden;
-        }
-        #devTour iframe {
-            margin-top: -3px;
-        }
-        .devTourOverlay {
-           background:transparent; 
-           position:relative; 
-           width:100%;
-           height:575px; /* your iframe height */
-           top:575px;  /* your iframe height */
-           margin-top:-575px;  /* your iframe height */
-        }
-        a.btn#applyButton {
-            margin-top: 15em;
-            z-index: 100;
-            position: relative;
-            font-size: 1.5em;
-            font-family: "Pluto Sans Regular";
-            text-transform: uppercase;
-        }
-        div.title-image {
-            background: url("assets/mineimages/title-image.jpg");
-            background-size: 100% auto;
-            background-repeat: no-repeat;
-            height: 100%;
-        }
-        div.title-image-container{
-            height: 625px;
-        }
-        .main-title {
-            color: white;
-            font-family: "Pluto Sans Regular";
-            margin-top: 1.5em;
-        }
-        .subtitle-title {
-            color: white;
-            font-family: "Pluto Sans ExLight";
-        }
-        section#slider.block {
-            padding: 0px;
-        }
-    </style>
+    <!-- styles -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/minestyle.css" type="text/css">
+
+
+
+
+    <!-- <link rel="stylesheet" href="assets/css/flexslider.css" type="text/css"> -->
 
 </head>
-
+<!-- navigation -->
+<!-- splash image -->
+<!-- core value -->
+<!-- Why live at the devhouse -->
+<!-- tour -->
+<!-- available apartments -->
+<!-- testimonials -->
+<!-- map -->
+<!-- contact page -->
 <body data-spy="scroll" data-target=".navigation" data-offset="90">
 <!-- Wrapper -->
 <section id="home"></section>
 <div class="wrapper">
+        
+
 
     <!-- navigation -->
     <div class="navigation fixed">
@@ -156,7 +57,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <div class="navbar-brand nav" id="brand">
-                        <a href="index.html"><img src="assets/mineimages/mkslogo.png" alt="brand" style="height:2em"></a>
+                        <a href="index.html"><img src="assets/mineimages/mkslogo.png" alt="brand" style="height:2em"></a> 
                     </div>
                 </div>
                 <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
@@ -177,8 +78,8 @@
 
 
 
-    <!-- main image -->
-    <section id="slider" class="block">
+    <!-- splash image -->
+    <section id="splash-image" class="block">
         <br><br>
         <div class="container-fluid title-image-container">
             <div class="row title-image">
@@ -187,7 +88,9 @@
                         <div class="col-md-6 col-sm-6 pull-right">
                             <h2 class="main-title"> Live Together Under One Roof</h2>
                             <h4 class="subtitle-title"> Launch Ideas | Develop Software | Meet the Community</h4>
-                            <center><a href="https://raviparikh.typeform.com/to/rAlRDP" class="btn btn-primary btn-lg" id="applyButton" role="button" target="_blank">Move In Today</a></center>
+                            <center>
+                                <a href="https://raviparikh.typeform.com/to/rAlRDP" class="btn btn-primary btn-lg" id="apply-button" role="button"target="_blank">Move In Today</a>
+                            </center>
                         </div>
                     </div>
                 </div>
@@ -198,14 +101,16 @@
 
 
     <!-- core value -->
-    <section id="features-boxes" class="block ">
+    <section id="core-values" class="block ">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-3">
                     <div class="feature-box">
-                        <center><i class="icon-calendar" style="font-size:5em"></i></center>
+                        <center>
+                            <i class="icon icon-calendar"></i>
+                        </center>
                         <header>
-                            <h4 style="text-align:center">Short Term</h4>
+                            <h4 id="core-value">Short Term</h4>
                         </header>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus,
                             risus sit amet auctor sodales, justo erat tempor eros, non
@@ -214,9 +119,11 @@
                 </div>
                 <div class="col-md-3 col-sm-3">
                     <div class="feature-box">
-                        <center><i class="icon-money" style="font-size:5em"></i></center>
+                        <center>
+                            <i class="icon icon-money"></i>
+                        </center>
                         <header>
-                            <h4 style="text-align:center">No Worries</h4>
+                            <h4 id="core-value">No Worries</h4>
                         </header>
                         <p>Your monthly bill includes all cable, utilities, gas, water, and bi-weekly cleaning service.
                         </p>
@@ -224,9 +131,11 @@
                 </div>
                 <div class="col-md-3 col-sm-3">
                     <div class="feature-box">
-                        <center><i class="icon-users" style="font-size:5em"></i></center>
+                        <center>
+                            <i class="icon icon-users"></i>
+                        </center>
                         <header>
-                            <h4 style="text-align:center">Good People</h4>
+                            <h4 id="core-value">Good People</h4>
                         </header>
                         <p>We look for developers, entreprenuers, creative minds, and people looking to build. Through a selective application process, we find the best possible community.
                         </p>
@@ -234,9 +143,11 @@
                 </div>
                 <div class="col-md-3 col-sm-3">
                     <div class="feature-box">
-                        <center><i class="icon-target" style="font-size:5em"></i></center>
+                        <center>
+                            <i class="icon icon-target"></i>
+                        </center>
                         <header>
-                            <h4 style="text-align:center">Location, Location, Location!</h4>
+                            <h4 id="core-value">Location, Location, Location!</h4>
                         </header>
                         <p>We are located in east Austin, 5 minutes away from the University of Texas, MakerSquare, Capitol Factory, and nightlife on 6th.
                         </p>
@@ -312,11 +223,19 @@
 
 
     <!-- tour -->
-    <section class="block" style="padding-top:0px;padding-bottom:0px;">
-        <div class="devTourOverlay" onClick="style.pointerEvents='none'"></div>
-        <center id="devTour">
-            <iframe id="tour-box" width="100%" height="575" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=MakerSquare+DevHouse&amp;layer=c&amp;sll=30.278424,-97.721524&amp;cid=16617492529913770518&amp;panoid=mecElrJYtvMAAAAGOzWhcg&amp;cbp=13,158.08,,0,0&amp;hl=en&amp;gl=US&amp;ie=UTF8&amp;hq=MakerSquare+DevHouse&amp;hnear=&amp;ll=30.278424,-97.721524&amp;spn=0.006295,0.006295&amp;t=m&amp;cbll=30.278353,-97.721524&amp;source=embed&amp;output=svembed"></iframe>
-        </center>
+    <section id="tour" class="block">
+        <div class="container-fluid">
+            <div id="dev-tour-overlay" onClick="style.pointerEvents='none'"></div>
+            <center id="dev-tour">
+                <iframe 
+                id="tour-box" 
+                width="100%" 
+                height="575" 
+                frameborder="0" scrolling="no" 
+                marginheight="0" marginwidth="0" 
+                src="https://maps.google.com/maps?q=MakerSquare+DevHouse&amp;layer=c&amp;sll=30.278424,-97.721524&amp;cid=16617492529913770518&amp;panoid=mecElrJYtvMAAAAGOzWhcg&amp;cbp=13,158.08,,0,0&amp;hl=en&amp;gl=US&amp;ie=UTF8&amp;hq=MakerSquare+DevHouse&amp;hnear=&amp;ll=30.278424,-97.721524&amp;spn=0.006295,0.006295&amp;t=m&amp;cbll=30.278353,-97.721524&amp;source=embed&amp;output=svembed"></iframe>
+            </center>
+        </div>
     </section>
 
 
@@ -436,14 +355,14 @@
         <div class="container">
             <div class="owl-carousel testimonials-carousel">
                 <blockquote class="testimonial">
-                        <img alt="" src="assets/mineimages/tina.png" style="width:6em">
+                        <img alt="" src="assets/mineimages/tina.png" class="reviewer-pic">
                     <aside class="cite">
                         <p>DevHouse hack nights brought us closer together as well as our three DevHouse parties/mixers.</p>
                         <footer>Tina</footer>
                     </aside>
                 </blockquote>
                 <blockquote class="testimonial">
-                        <img alt="" src="assets/mineimages/taylor.png" style="width:6em">
+                        <img alt="" src="assets/mineimages/taylor.png" class="reviewer-pic">
                     <aside class="cite">
                         <p>Having three other roommates was definitely a huge resource when it came to bouncing ideas off of one another and figuring how to get unstuck..</p>
                         <footer>Taylor</footer>
@@ -457,17 +376,21 @@
 
 
     <!-- map -->
-    <section class="block" style="padding-top:0px;padding-bottom:0px;">
-        <div class="devMapOverlay" onClick="style.pointerEvents='none'"></div>
-        <center id="devMap">
-            <iframe 
-              id="map-box"  
-              width="100%"
-              height="500"
-              frameborder="0" style="border:0"
-              src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCOnpZgn-7iSwcokSBUF8qM-BC2kbrC-v8&q=1803%20E%2018th%20street%2078702&zoom=14">
-            </iframe>
-        </center>
+    <section id="location" class="block">
+        <div class="container-fluid">
+
+            <div id="dev-map-overlay" onClick="style.pointerEvents='none'"></div>
+            <center id="dev-map">
+                <iframe 
+                  id="map-box"  
+                  width="100%"
+                  height="500"
+                  frameborder="0" style="border:0"
+                  src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCOnpZgn-7iSwcokSBUF8qM-BC2kbrC-v8&q=1803%20E%2018th%20street%2078702&zoom=14">
+                </iframe>
+            </center>
+
+        </div>
     </section>
 
 
@@ -477,18 +400,23 @@
     <section id="contact" class="block background-color-grey-dark has-dark-background">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-sm-12 text-center" style="font-family:'Pluto Sans Regular'">
+                <div class="col-md-12 col-sm-12 text-center contact-container">
                     <header><h2>Excited?</h2></header>
-                    <h5 style="font-family:'Pluto Sans ExLight'">So are we! Rooms are available, so apply now and prepare to get weird.</h5>
+                    <h5>So are we! Rooms are available, so apply now and prepare to get weird.</h5>
                     <center><a href="https://raviparikh.typeform.com/to/rAlRDP" class="btn btn-primary btn-md" role="button" target="_blank">MOVE IN TODAY</a></center>
-                    <h5 style="font-family:'Pluto Sans ExLight'">If you have more questions, whether they're about applying, pricing, or Austin, we're here for you. Email us at hello@thedev.house.</h5>
+                    <h5>If you have more questions, whether they're about applying, pricing, or Austin, we're here for you. Email us at <a href="mailto:hello@dev.house?Subject=DevHouse" target="_top">hello@thedev.house</a>.</h5>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- footer for nav link -->
+    <span id="footer"></span>
+
 </div>
 <!-- end Wrapper -->
+
+
 <script type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>

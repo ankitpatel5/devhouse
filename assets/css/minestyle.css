@@ -1,0 +1,154 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'Pluto Sans Regular';
+  src: url('../fonts/pluto_sans/pluto-sans-condensed-regular.eot') format('embedded-opentype'),
+       url('../fonts/pluto_sans/pluto-sans-condensed-regular.woff') format('woff'),
+       url('../fonts/pluto_sans/pluto-sans-condensed-regular.ttf') format('truetype'),
+       url('../fonts/pluto_sans/pluto-sans-condensed-regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pluto Sans ExLight';
+  src: url('../fonts/pluto_sans/pluto-sans-condensed-exlight.eot') format('embedded-opentype'),
+       url('../fonts/pluto_sans/pluto-sans-condensed-exlight.woff') format('woff'),
+       url('../fonts/pluto_sans/pluto-sans-condensed-exlight.ttf') format('truetype'),
+       url('../fonts/pluto_sans/pluto-sans-condensed-exlight.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* navigation */
+
+
+
+
+/* splash image css */
+section#splash-image.block {
+    padding: 0px;
+}
+.title-image-container{
+    height: 625px;
+}
+.title-image {
+    background: url("../mineimages/title-image.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 100%;
+}
+.main-title {
+    color: white;
+    font-family: "Pluto Sans Regular";
+    margin-top: 1.5em;
+}
+.subtitle-title {
+    color: white;
+    font-family: "Pluto Sans ExLight";
+}
+.btn#apply-button {
+    font-family: "Pluto Sans Regular";
+    font-size: 1.5em;
+    position: relative;
+    margin-top: 15em;
+    text-transform: uppercase;
+}
+
+
+
+
+
+/* core value */
+i.icon {
+  font-size: 5em;
+}
+h4#core-value {
+  text-align: center;
+}
+/* Why live at the devhouse */
+/* available apartments */
+
+
+
+
+
+/* tour */
+section#tour.block, #tour .container-fluid {
+    padding: 0px;
+}
+#dev-tour-overlay {
+   background:transparent; 
+   height:575px; /* your iframe height */
+   margin-top:-575px;  /* your iframe height */
+   position:relative; 
+   top:575px;  /* your iframe height */
+   width:100%;
+}
+#dev-tour iframe {
+    margin-top: -3px;
+}
+#dev-tour {
+    height: 572px; /* height of the iframe minus the 3 f***king pixels */
+    overflow: hidden;
+    width: 100%;
+}
+
+
+
+
+
+/* testimonials */
+.reviewer-pic {
+  width: 6em;
+}
+
+
+
+
+
+
+
+/* map */
+section#location.block, #location .container-fluid {
+  padding: 0px;
+}
+#dev-map-overlay {
+   background:transparent; 
+   height:500px; /* your iframe height */
+   margin-top:-500px;  /* your iframe height */
+   position:relative; 
+   top:500px;  /* your iframe height */
+   width:100%;
+}
+#dev-map iframe {
+    margin-top: -3px;
+}
+#dev-map {
+    height: 497px; /* height of the iframe minus the 3 f***king pixels */
+    overflow: hidden;
+    width: 100%;
+}
+
+
+
+
+
+/* contact page */
+.contact-container {
+  font-family:'Pluto Sans Regular';
+}
+
+.contact-container h5 {
+ font-family:'Pluto Sans ExLight'; 
+}
+
+
+
+
+
+
+
+
+
+
+
