@@ -32,48 +32,77 @@ section#splash-image.block {
     height: 625px;
 }
 .title-image {
-    background: url("../mineimages/title-image.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    height: 100%;
+  background: url("../mineimages/title-image.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 100%;
 }
 .main-title {
-    color: white;
-    font-family: "Pluto Sans Regular";
-    margin-top: 1.5em;
+  color: white;
+  font-family: "Pluto Sans Regular";
+  margin-top: 1.5em;
 }
 .subtitle-title {
-    color: white;
-    font-family: "Pluto Sans ExLight";
+  color: white;
+  font-family: "Pluto Sans ExLight";
 }
 .btn#apply-button {
-    font-family: "Pluto Sans Regular";
-    font-size: 1.5em;
-    position: relative;
-    margin-top: 15em;
-    text-transform: uppercase;
+  font-family: "Pluto Sans Regular";
+  font-size: 1.5em;
+  position: relative;
+  margin-top: 15em;
+  text-transform: uppercase;
+}
+
+
+/* mission */
+.arrow-down-landing {
+  margin-top: -20px;
+  margin-left: 10.5em;
+  margin-bottom: 20px;
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid white;
+  opacity: 1
+}
+.landing-quote p {
+  padding: 1em 1.5em;
+  font-size: 1.25em;
+  background: white;
+  border: solid 4px white;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  transition: all 200ms ease-out
 }
 
 
 
 
 
-/* core value */
-i.icon {
-  font-size: 5em;
-}
-h4#core-value {
-  text-align: center;
-}
-/* Why live at the devhouse */
+
+
 /* available rooms */
 #floorplan {
   height: 500px;
   width: auto;
 }
 
-
-
+/* core values */
+i.icon {
+  font-size: 5em;
+}
+h4#core-value {
+  text-align: center;
+}
+.background-color-blue-dark {
+  background-color: #032e51;
+  color: white;
+}
 
 
 /* tour */
@@ -81,24 +110,30 @@ section#tour.block, #tour .container-fluid {
     padding: 0px;
 }
 #dev-tour-overlay {
-   background:transparent; 
-   height:575px; /* your iframe height */
-   margin-top:-575px;  /* your iframe height */
-   position:relative; 
-   top:575px;  /* your iframe height */
-   width:100%;
-   z-index: 1;
+  background:transparent; 
+  height:575px; /* your iframe height */
+  margin-top:-575px;  /* your iframe height */
+  position:relative; 
+  top:575px;  /* your iframe height */
+  width:100%;
+  z-index: 1;
 }
 #dev-tour iframe {
-    margin-top: -3px;
+  margin-top: -3px;
 }
 #dev-tour {
-    height: 572px; /* height of the iframe minus the 3 f***king pixels */
-    overflow: hidden;
-    width: 100%;
+  height: 572px; /* height of the iframe minus the 3 f***king pixels */
+  overflow: hidden;
+  width: 100%;
 }
 
 
+
+/* available rooms */
+.floorplan-button {
+  margin-bottom: 5px;
+  font-size: 1.5em;
+}
 
 
 
@@ -106,8 +141,17 @@ section#tour.block, #tour .container-fluid {
 .reviewer-pic {
   width: 6em;
 }
-
-
+.background-color-blue-light {
+  background-color: #639fde;
+}
+.cite p {
+  color: white;
+}
+blockquote .cite footer {
+  color: #c2185b;
+  font-weight: bold;
+  font-size: 1em;
+}
 
 
 
@@ -135,10 +179,6 @@ section#location.block, #location .container-fluid {
     width: 100%;
 }
 
-/*javascript map*/
-html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
-
-
 
 
 
@@ -148,11 +188,17 @@ html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
   font-family:'Pluto Sans Regular';
 }
 
-.contact-container h5 {
- font-family:'Pluto Sans ExLight'; 
+.contact-container h4 {
+  font-size: 1.25em;
+  font-family:'Pluto Sans ExLight'; 
 }
-
-
+.contact-container h5 {
+  font-family:'Pluto Sans ExLight'; 
+  font-size: 1.25em;
+}
+#hello-email {
+  color: #ff6f05;
+}
 
 
 

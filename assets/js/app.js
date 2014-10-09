@@ -6,8 +6,8 @@ app.controller('RoomsController', function ($scope) {
   $scope.index = 0;
   $scope.url = "../minimages/mkslogo.png"
   $scope.imageUrls = [
-    "unitAdownstairs",
-    "unitAupstairs"
+    "unitAdownstairs-clean",
+    "unitAupstairs-clean"
   ];
 
 
