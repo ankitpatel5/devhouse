@@ -2,8 +2,12 @@
     var centerLatLng = new google.maps.LatLng(30.277,-97.73);
 
     var devHouseLatLng = new google.maps.LatLng(30.278419,-97.72153);
-    var makerSquareLatLng = new google.maps.LatLng(30.269693,-97.74252);
-    var capitalFactoryLatLng = new google.maps.LatLng(30.268994,-97.740544);
+    var hackReactorLatLng = new google.maps.LatLng(30.270070,-97.741012);
+    var galvanizeLatLng = new google.maps.LatLng(30.265557,-97.749699);
+    var universityOfTexasCodingSchoolLatLng = new google.maps.LatLng(30.284046,-97.725534);
+    var generalAssemblyLatLng = new google.maps.LatLng(30.268598,-97.743000);
+    var theIronYardLatLng = new google.maps.LatLng(30.226851,-97.758195);
+    var devBootCampLatLng = new google.maps.LatLng(30.279961,-97.741867);
 
     var mapOptions = {
       zoom: 15,
@@ -17,18 +21,46 @@
         title:"devHouse"
     });
 
-    var makerSquareMarker = new google.maps.Marker({
-        position: makerSquareLatLng,
+    var hackReactorMarker = new google.maps.Marker({
+        position: hackReactorLatLng,
         map: map,
-        title:"makerSquare",
-        icon: "assets/mineimages/mksPin-small.png"
+        title:"hackReactor",
+        icon: "assets/mineimages/hrPin-small.png"
     });
 
-    var capitalFactoryMarker = new google.maps.Marker({
-        position: capitalFactoryLatLng,
+    var galvanizeMarker = new google.maps.Marker({
+        position: galvanizeLatLng,
         map: map,
-        title:"capitalFactory",
-        icon: "assets/mineimages/capitalFactoryPin-small.png"
+        title:"galvanize",
+        icon: "assets/mineimages/galvanizePin-small.png"
+    });
+
+    var universityOfTexasCodingSchoolMarker = new google.maps.Marker({
+        position: universityOfTexasCodingSchoolLatLng,
+        map: map,
+        title:"universityOfTexasCodingSchool",
+        icon: "assets/mineimages/utPin-small.png"
+    });
+
+    var generalAssemblyMarker = new google.maps.Marker({
+        position: generalAssemblyLatLng,
+        map: map,
+        title:"generalAssembly",
+        icon: "assets/mineimages/genAssemblyPin-small.png"
+    });
+
+    var theIronYardMarker = new google.maps.Marker({
+        position: theIronYardLatLng,
+        map: map,
+        title:"theIronYard",
+        icon: "assets/mineimages/ironyardPin-small.png"
+    });
+
+    var devBootCampMarker = new google.maps.Marker({
+        position: devBootCampLatLng,
+        map: map,
+        title:"devBootCamp",
+        icon: "assets/mineimages/dbcPin-small.png"
     });
 
 })();
