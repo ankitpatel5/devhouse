@@ -152,12 +152,21 @@ p {
 }
 
 .background-color-grey-light {
-  background-color: #f3f3f3;
+  background-color: #e9e9e9;
 }
 
 .background-color-grey-dark {
-  background-color: #363636;
+  background-color: #cdcdcd;
 }
+
+.background-color-teal {
+  background-color: #99d3df;
+}
+
+.background-color-light-blue {
+  background-color: #88bbd6;
+}
+
 .background-color-grey-dark a {
   color: #fff;
 }
