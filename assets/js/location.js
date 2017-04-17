@@ -31,29 +31,29 @@
     var galvanizeMarker = new google.maps.Marker({
         position: galvanizeLatLng,
         map: map,
-        title:"galvanize",
-        icon: "assets/mineimages/galvanizePin-small.png"
+        title:"Galvanize",
+        icon: "assets/mineimages/map-small-galvanize.png"
     });
 
     var universityOfTexasCodingSchoolMarker = new google.maps.Marker({
         position: universityOfTexasCodingSchoolLatLng,
         map: map,
-        title:"universityOfTexasCodingSchool",
-        icon: "assets/mineimages/utPin-small.png"
+        title:"University of Texas Coding Bootcamp",
+        icon: "assets/mineimages/map-small-ut.png"
     });
 
     var generalAssemblyMarker = new google.maps.Marker({
         position: generalAssemblyLatLng,
         map: map,
-        title:"generalAssembly",
-        icon: "assets/mineimages/genAssemblyPin-small.png"
+        title:"General Assembly",
+        icon: "assets/mineimages/map-small-ga.png"
     });
 
     var theIronYardMarker = new google.maps.Marker({
         position: theIronYardLatLng,
         map: map,
-        title:"theIronYard",
-        icon: "assets/mineimages/ironyardPin-small.png"
+        title:"The Iron Yard",
+        icon: "assets/mineimages/map-small-ironyard.png"
     });
 
     var devBootCampMarker = new google.maps.Marker({
