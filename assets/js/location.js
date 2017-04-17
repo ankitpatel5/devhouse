@@ -18,7 +18,8 @@
     var devHouseMarker = new google.maps.Marker({
         position: devHouseLatLng,
         map: map,
-        title:"devHouse"
+        title:"Dev House"
+        icon: "assets/mineimages/map-small-devhouse.png"
     });
 
     var hackReactorMarker = new google.maps.Marker({
