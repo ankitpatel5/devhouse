@@ -22,13 +22,6 @@
         icon: "assets/mineimages/map-small-devhouse.png"
     });
 
-    var hackReactorMarker = new google.maps.Marker({
-        position: hackReactorLatLng,
-        map: map,
-        title:"Hack Reactor",
-        icon: "assets/mineimages/map-small-hr.png"
-    });
-
     var galvanizeMarker = new google.maps.Marker({
         position: galvanizeLatLng,
         map: map,
@@ -48,6 +41,13 @@
         map: map,
         title:"General Assembly",
         icon: "assets/mineimages/map-small-ga.png"
+    });
+
+    var hackReactorMarker = new google.maps.Marker({
+        position: hackReactorLatLng,
+        map: map,
+        title:"Hack Reactor",
+        icon: "assets/mineimages/map-small-hr.png"
     });
 
     var theIronYardMarker = new google.maps.Marker({
