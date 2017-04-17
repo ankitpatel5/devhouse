@@ -25,7 +25,7 @@
         position: hackReactorLatLng,
         map: map,
         title:"hackReactor",
-        icon: "assets/mineimages/hrPin-small.png"
+        icon: "assets/mineimages/map-small-hr.png"
     });
 
     var galvanizeMarker = new google.maps.Marker({
