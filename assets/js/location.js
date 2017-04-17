@@ -1,5 +1,5 @@
 (function () {
-    var centerLatLng = new google.maps.LatLng(30.277,-97.73);
+    var centerLatLng = new google.maps.LatLng(30.260363,-97.737490);
 
     var devHouseLatLng = new google.maps.LatLng(30.278419,-97.72153);
     var hackReactorLatLng = new google.maps.LatLng(30.270070,-97.741012);
@@ -10,7 +10,7 @@
     var devBootCampLatLng = new google.maps.LatLng(30.279961,-97.741867);
 
     var mapOptions = {
-      zoom: 15,
+      zoom: 13,
       center: centerLatLng
     }
     var map = new google.maps.Map(document.getElementById("dev-map"), mapOptions);
