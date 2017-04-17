@@ -24,7 +24,7 @@
     var hackReactorMarker = new google.maps.Marker({
         position: hackReactorLatLng,
         map: map,
-        title:"hackReactor",
+        title:"Hack Reactor",
         icon: "assets/mineimages/map-small-hr.png"
     });
 
@@ -59,8 +59,8 @@
     var devBootCampMarker = new google.maps.Marker({
         position: devBootCampLatLng,
         map: map,
-        title:"devBootCamp",
-        icon: "assets/mineimages/dbcPin-small.png"
+        title:"Dev Bootcamp",
+        icon: "assets/mineimages/map-small-dbc.png"
     });
 
 })();
