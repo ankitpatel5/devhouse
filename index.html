@@ -61,7 +61,7 @@
                         <a href="index.html"><img src="assets/mineimages/devhouse-logo.png" alt="brand" style="height:3em"></a> 
                     </div>
                 </div>
-                <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+                <nav class="home-nav-style collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#home">Home</a></li>
                         <li><a href="#partners">Partners</a></li>
@@ -104,7 +104,7 @@
     </section>
 
     <!-- mission -->
-    <section id="mission" class="block background-color-teal">
+    <section id="mission" class="block background-color-blue has-dark-background">
         <div class="container">
             <header class="text-center">
                 <h2>What is the DevHouse?</h2>
@@ -118,7 +118,7 @@
                     <div class="row">
                         <div class="col-md-2 col-sm-2 "></div>
                         <div class="col-md-3 col-sm-3 ">
-                            <img src="assets/mineimages/ravi.png" style="width:8.5em;border-radius:100px;border:3px solid white;filter: grayscale(50%);-webkit-filter: grayscale(50%);-moz-filter: grayscale(50%);">
+                            <img src="assets/mineimages/ravi.png" style="width:8.5em;border-radius:100px;border:3px solid #2B2D42;filter: grayscale(50%);-webkit-filter: grayscale(50%);-moz-filter: grayscale(50%);">
                         </div>
                         <div class="col-md-7 col-sm-7 ">
                             <h4>Ravi Parikh</h4>
@@ -134,7 +134,7 @@
                     <div class="row">
                         <div class="col-md-2 col-sm-2 "></div>
                         <div class="col-md-3 col-sm-3 ">
-                            <img src="assets/mineimages/mehul.png" style="width:8.5em;border-radius:100px;border:3px solid white;filter: grayscale(50%);-webkit-filter: grayscale(50%);-moz-filter: grayscale(50%);">
+                            <img src="assets/mineimages/mehul.png" style="width:8.5em;border-radius:100px;border:3px solid #2B2D42;filter: grayscale(50%);-webkit-filter: grayscale(50%);-moz-filter: grayscale(50%);">
                         </div>
                         <div class="col-md-7 col-sm-7 ">
                             <h4>Mehul Patel</h4>
@@ -154,7 +154,7 @@
         <div class="container-fluid">
             <header class="text-center">
                 <h2>Our Partners</h2>
-                <br><br>
+                <br><br><br>
                 <div class="row">
                 <div class="col-md-4 col-sm-4">
                     <div class="feature-box">
@@ -177,6 +177,9 @@
                         </center>
                     </div>
                 </div>
+                </div>
+                <br><br><br><br><br>
+                <div class="row">
                 <div class="col-md-4 col-sm-4">
                     <div class="feature-box">
                         <center>
@@ -215,7 +218,7 @@
     </section>
 
     <!-- core values -->
-    <section id="features" class="block background-color-light-blue">
+    <section id="features" class="block background-color-dark-grey has-dark-background">
         <div class="container">
             <header class="text-center">
                 <h2>Why live at the DevHouse?</h2>
@@ -287,7 +290,7 @@
 
 
     <!-- tour -->
-    <section id="tour-box" class="block background-color-gray-dark">
+    <section id="tour-box" class="block background-color-blue">
         <div class="container-fluid">
             <header class="text-center">
                 <div id="dev-tour-overlay" onClick="style.pointerEvents='none'"></div>
@@ -310,7 +313,7 @@
 
 
     <!-- available rooms -->
-    <section id="rooms" class="block background-color-teal" ng-controller="RoomsController">
+    <section id="rooms" class="block background-color-grey-light" ng-controller="RoomsController">
         <div class="container">
             <div class="row">
                 <div class="col-md-2 cl-sm-2">
@@ -329,17 +332,34 @@
 
 
         <!-- pricing -->
-    <section id="pricing" class="block background-color-grey-light">
+    <section id="pricing" class="block background-color-dark-grey has-dark-background">
         <div class="container-fluid">
             <header class="text-center">
                 <h2>Pricing & Amenities</h2>
-                
+                <br><br>
                 <div class="row">
-                <div class="col-md-6 col-sm-6">
+                <div class="col-md-4 col-sm-4">
                     <h3><b>Pricing</b></h3>
+                        <ul>
+                          <li>~$900/month (shared room)</li><br>
+                          <li>~$1500/month (private room)</li>
+                          <br>
+                          * Rates vary depending on lease term
+                        </ul>
                 </div>
-                <div class="col-md-6 col-sm-6">
+                <div class="col-md-4 col-sm-4">
                     <h3><b>Amenities</b></h3>
+                    <ul>
+                          <li>Fully furnished</li><br>
+                          <li>Plenty of parking</li><br>
+                          <li>Office desk & whiteboards</li><br>
+                          <li>Regular cleaning on us so you can focus on more important things</li>
+                          <br>
+                        </ul>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <h3><b>Affordable short-term housing designed for you.</b></h3><br><br>
+                    <a href="https://raviparikh.typeform.com/to/rAlRDP" class="btn btn-primary btn-lg" role="button" target="_blank">RESERVE NOW</a>
                 </div>
             </div>
             </header>
@@ -359,7 +379,7 @@
 
 
     <!-- testimonials -->
-    <section id="testimonials" class="block background-color-light-blue">
+    <section id="testimonials" class="block background-color-blue">
         <div class="container">
             <div class="owl-carousel testimonials-carousel">
                 <blockquote class="testimonial">
@@ -394,7 +414,7 @@
 
 
     <!-- contact page -->
-    <section id="contact" class="block background-color-grey-dark has-dark-background">
+    <section id="contact" class="block background-color-grey-light">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12 text-center contact-container">

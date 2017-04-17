@@ -57,7 +57,7 @@ section#splash-image.block {
 
 /* mission */
 .arrow-down-landing {
-  margin-top: -20px;
+  margin-top: -10px;
   margin-left: 10.5em;
   margin-bottom: 20px;
   position: relative;
@@ -65,16 +65,16 @@ section#splash-image.block {
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 15px solid white;
+  border-top: 15px solid #2B2D42;
   opacity: 1
 }
 .landing-quote p {
   padding: 1em 1.5em;
   font-size: 1.25em;
-  background: white;
-  border: solid 4px white;
+  background: #2B2D42;
+  border: solid 4px #2B2D42;
   border-radius: 2px;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 1px #2B2D42;
   -webkit-transition: all 200ms ease-out;
   -moz-transition: all 200ms ease-out;
   transition: all 200ms ease-out
