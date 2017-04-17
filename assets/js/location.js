@@ -18,7 +18,7 @@
     var devHouseMarker = new google.maps.Marker({
         position: devHouseLatLng,
         map: map,
-        title:"Dev House"
+        title:"Dev House",
         icon: "assets/mineimages/map-small-devhouse.png"
     });
 
